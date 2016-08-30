@@ -6,14 +6,14 @@
 因为课程是老版本，和最新版本有很多不同，改动了一些东西，自己也进了不少了坑，多少次有想死的感觉，想放弃，又于心不忍，还好一步一步填完了所有的坑，最终实现了想要达到的效果
 
 ```
-git clone https://github.com/wangyongzhi/gallery-by-react
+git clone https://github.com/cllgeek/gallery-by-react
 npm i
 npm start
 ```
 
 完事会自动打开http://localhost:8000/webpack-dev-server/可看效果
 
-如果你想先睹为快，也可通过 http://zhige.me/gallery-by-react/ 查看效果
+如果你想先睹为快，也可通过 https://cllgeek.github.io/gallery-by-react/ 查看效果
 
 当然，学一门新技术可能会遇到很多问题，尤其是最新版本和教程已经有很不同之处，这需要有足够的耐心，一步一步去解决它。
 
@@ -65,7 +65,10 @@ offsetWidth：对象整体的实际宽度，包滚动条等边线，会随对象
 
 ## 其他要注意的地方
 
-对前端调试不太熟练，一些简单的错误都会找上半天
+* 关于调试react,可以下个chrome的插件很方便 React Developer Tools 真的超级方便,不会用的联系我哈
+* webpack的注意点:如果不加json-loader的话,main.js中获取json要这样写require('json!../data/imageDatas.json')
+* 使用ReactDOM.findDOMNode注意要导入react-dom 还有和this.refs的区别
+* 还有就是如果要把项目推送到gh-pages的话,注意把src目录下index.html中的/assets/app.js/和cgf/default.js中的publicPath改为相对路径
 
 ```
 //少了个斜杠
@@ -80,5 +83,5 @@ imgFigureClassName += this.props.arrange.isInverse ? ' is-inverse' : '';
 切不可大意，不过遇到问题，慢慢解决就好，代码不会犯错，只有人会犯错
 
 ## 最后
-
+有问题可以联系我![image](https://cllgeek.github.io/uploads/weixin.gif)
 [materliu](https://github.com/materliu)是个非常好的带有文艺气息的高水平的程序员，已经路转粉了。
