@@ -81,7 +81,12 @@ imgFigureClassName += this.props.arrange.isInverse ? ' is-inverse' : '';
 ```
 
 切不可大意，不过遇到问题，慢慢解决就好，代码不会犯错，只有人会犯错
-
+```css
+img{
+width:200px;
+height:200px;
+}
+```
 ## 最后
 有问题可以联系我![image](https://cllgeek.github.io/uploads/weixin.gif)
 [materliu](https://github.com/materliu)是个非常好的带有文艺气息的高水平的程序员，已经路转粉了。
